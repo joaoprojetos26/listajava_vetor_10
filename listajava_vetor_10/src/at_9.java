@@ -23,7 +23,7 @@ public class at_9 {public static void main(String[] args) {
             }
 
     }
-    System.out.println("a quantidade de logais e:" +cont);
+    System.out.println("a quantidade de vogais e:" +cont);
 sc.close();
 }
 
