@@ -2,25 +2,31 @@ import java.util.Scanner;
 
 public class at_9 {public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
-    char[] letras = new char[15];
-    int totalVogais = 0;
+ Scanner sc = new Scanner(System.in);
+    int letra=15;
+    int cont=0;
+    String[] vert= new String[letra];
+    for (int i=0;i<letra;i++){
+        vert[i]=sc.next();
+        if (i==letra) {
+        }else if (vert[i].equals("A") || vert[i].equals("a")) {
+                cont++;
+            } else if (vert[i].equals("E") || vert[i].equals("e")) {
+                cont++;
+            } else if (vert[i].equals("I") || vert[i].equals("i")) {
+                cont++;
+            } else if (vert[i].equals("O") || vert[i].equals("o")) {
+                cont++;
+            } else if (vert[i].equals("U") || vert[i].equals("u")) {
+                cont++;
 
-    System.out.println("Digite 15 letras:");
+            }
 
-    for (int i = 0; i < 15; i++) {
-        System.out.print((i + 1) + "ª letra: ");
-        letras[i] = sc.next().toLowerCase().charAt(0);
-
-        if (isVogal(letras[i])) {
-            totalVogais++;
-        }
     }
-
-    System.out.println("\nTotal de vogais digitadas: " + totalVogais);
+    System.out.println("a quantidade de logais e:" +cont);
+sc.close();
 }
 
-    public static boolean isVogal(char c) {
-        return "aeiou".indexOf(c) != -1;
-    }
-
 }
+//obs qual for usar .equals usa || enves de &&
+
